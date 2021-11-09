@@ -1,0 +1,17 @@
+public class Arm2 {
+    public static void main(String[] args) 
+    {
+        for (int num = 100; num <1000; num++) {
+            int sum=0;
+            int i=num;
+            while(i>0){
+                int dif=i%10;
+                sum = sum+dif*dif*dif;
+                i/=10;
+            }
+            if(num==sum){
+                System.out.println("The following is an armstrong number: "+num);
+            }
+        }
+    }
+}

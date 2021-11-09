@@ -1,0 +1,21 @@
+package proj4;
+import java.util.Scanner;
+
+public class CISI {
+	 public static void main(String[] args) {
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("Enter the principal amount");
+	        int p = scan.nextInt();
+	        System.out.println("Enter the Rate");
+	        int r = scan.nextInt();
+	        System.out.println("Enter the Time");
+	        int t = scan.nextInt();
+	        int SI = ((p*r*t)/100);
+	        System.out.println("The Simple interest is " + SI);
+	        System.out.println("Enter the number of compounding");
+	        int n = scan.nextInt();
+	        double A = p*(1+r/n)^n*t;
+	        double CI = A - p;
+	        System.out.println("Compund Interest" + CI);
+	 }
+}

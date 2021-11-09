@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class CUI {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int count = 0;
+        String username = "", password ="";
+        do{
+            System.out.println("Enter the username");
+            username = scan.nextLine();
+            System.out.println("Enter the PAssword");
+            password = scan.nextLine();
+            if(username.equals("Mansi") && password.equals("Mansi123"))
+            {
+                System.out.println("Welcome " + username);
+                return;
+            }
+            else{
+                System.out.println("Incorrect Details Try Again!");
+                count++;
+            }
+            
+        }
+        while(count<3);
+        {
+            System.out.println("contact Admin");
+        }
+    }
+}
